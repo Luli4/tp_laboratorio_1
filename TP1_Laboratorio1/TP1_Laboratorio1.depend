@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1554398875 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp1_laboratorio1\functionsmath.c
+	"functionsMath.h"
+
+1554398698 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp1_laboratorio1\functionsmath.h
+
+1554398892 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp1_laboratorio1\input.c
+	<stdio.h>
+	"input.h"
+
+1554398698 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp1_laboratorio1\input.h
+
+1554398847 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp1_laboratorio1\main.c
+	<stdlib.h>
+	<stdio.h>
+	"functionsMath.h"
+	"input.h"
+
