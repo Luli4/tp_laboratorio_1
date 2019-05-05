@@ -240,7 +240,7 @@ void employees_subMenuReports (eEmployee listE[], int SEMP, eSector sectors[], i
     {
         case 1:
             employees_sortEmployeesByLastName(listE, id, sectors, SSEC);
-            employees_showListBySector(listE, SEMP, sectors, SSEC);
+            employees_printEmployees(listE, SEMP, sectors, SSEC);
             break;
         case 2:
             employees_averageSalary(listE, id);
@@ -401,8 +401,7 @@ void employees_sortEmployeesByLastName(eEmployee listE[], int SEMP, eSector sect
     }
 }
 
-
-void employees_showListBySector(eEmployee listE[], int SEMP, eSector sectors[], int SSEC)
+void employees_printEmployees(eEmployee listE[], int SEMP, eSector sectors[], int SSEC)
 {
     int j; //variable de control del for para el sector
     int i; //variable de control del for para los empleados

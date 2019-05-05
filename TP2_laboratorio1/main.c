@@ -6,18 +6,13 @@
 #include "validations.h"
 #define SIZE_EMPLOYEES 1000
 #define SIZE_SECTORS 3
-
 int main()
 {
     int option; //opcion que derivara en un submenu
-
-    eEmployee listE[SIZE_EMPLOYEES];
-    eSector listS[SIZE_SECTORS]= {{1,"Contabilidad"},{2,"Sistemas"},{3, "RRHH"}};
+    eEmployee listE[SIZE_EMPLOYEES]; //lista de empleados
+    eSector listS[SIZE_SECTORS]= {{1,"Contabilidad"},{2,"Sistemas"},{3, "RRHH"}}; //array de estructuras con relacion 1 a muchos con los sectores cargados
     employees_initEmployees(listE, SIZE_EMPLOYEES);
     int id=0;
-
-    //employees_hcData(listE, 6);
-
     do
     {
         option = employees_optionsMenu("\t1.Dar de alta\n\t2.Modificar\n\t3.Dar de baja\n\t4.Informes\n\t5.Salir\n\n\n", 1, 5);

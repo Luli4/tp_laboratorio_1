@@ -27,7 +27,6 @@ struct
  */
 int employees_optionsMenu(char [], int, int);
 
-
 /** \brief inicializa el estado de un array de estructuras en -1
  *
  * \param array a inicializar
@@ -35,7 +34,6 @@ int employees_optionsMenu(char [], int, int);
  * \return void
  */
 void employees_initEmployees (eEmployee [], int);
-
 
 /** \brief permite que el usuario cargue una estructura dentro de un array
  *
@@ -48,7 +46,6 @@ void employees_initEmployees (eEmployee [], int);
  */
 int employees_addEmployees (eEmployee [], int, eSector [], int, int);
 
-
 /** \brief busca un espacio vacio en un array de estructuras
  *
  * \param array de estructuras
@@ -57,7 +54,6 @@ int employees_addEmployees (eEmployee [], int, eSector [], int, int);
  *
  */
 int employees_emptyPlace (eEmployee [], int);
-
 
 /** \brief permite el ingreso de uno o mas nombres validados
  *
@@ -69,7 +65,6 @@ int employees_emptyPlace (eEmployee [], int);
  */
 void employees_inputName(char [], int, char []);
 
-
 /** \brief permite al usuario elegir si guardar o no los datos ingresados
  *
  * \param mensaje de verificacion
@@ -78,7 +73,6 @@ void employees_inputName(char [], int, char []);
  *
  */
 int employees_verifyConformity (char [], char []);
-
 
 /** \brief permite que el usuario ingrese y elija una estructura con relacion uno a muchos
  *
@@ -90,7 +84,6 @@ int employees_verifyConformity (char [], char []);
  */
 eSector sectors_getSector(eSector [], int, eEmployee[]);
 
-
 /** \brief muestra una lista de arrays de estructuras con los campos guardados en las estructuras que fueron cargadas
  *
  * \param array de estructuras
@@ -101,7 +94,6 @@ eSector sectors_getSector(eSector [], int, eEmployee[]);
  *
  */
 void employees_showList (eEmployee [], int, eSector [], int);
-
 
 /** \brief envia al usuario al submenu de informes
  *
@@ -115,7 +107,6 @@ void employees_showList (eEmployee [], int, eSector [], int);
  */
 void employees_subMenuReports (eEmployee [], int, eSector [], int, int);
 
-
 /** \brief funcion de programador. Permite pre cargar datos en los arrays de estructuras creadas
  *
  * \param [] eEmployee array de estructuras
@@ -124,7 +115,6 @@ void employees_subMenuReports (eEmployee [], int, eSector [], int, int);
  *
  */
 void employees_hcData(eEmployee [], int);
-
 
 /** \brief permite al usuario entrar al submenu de modificaciones
  *
@@ -139,7 +129,6 @@ void employees_hcData(eEmployee [], int);
  */
 void employees_subMenuModify (eEmployee [], int, eSector[], int, int, int);
 
-
 /** \brief permite encontrar una estructura por primary key
  *
  * \param array de estructuras
@@ -152,7 +141,6 @@ void employees_subMenuModify (eEmployee [], int, eSector[], int, int, int);
  *
  */
 int employees_findEmployeeById (eEmployee [], int, eSector [], int, int, int);
-
 
 /** \brief permite borrar una estructura
  *
@@ -167,7 +155,6 @@ int employees_findEmployeeById (eEmployee [], int, eSector [], int, int, int);
  */
 void employees_removeEmployee (eEmployee [], int, eSector [], int, int, int);
 
-
 /** \brief permite ordenar el array de estructuras por apellido alfabeticamente en forma ascendente
  *
  * \param [] eEmployee array de estructuras
@@ -179,7 +166,6 @@ void employees_removeEmployee (eEmployee [], int, eSector [], int, int, int);
  */
 void employees_sortEmployeesByLastName(eEmployee [], int, eSector[], int);
 
-
 /** \brief permite mostrar un array de estructuras ordenada segun el array de estructuras con relacion uno a muchos
  *
  * \param [] eEmployee array de estructuras
@@ -189,8 +175,7 @@ void employees_sortEmployeesByLastName(eEmployee [], int, eSector[], int);
  * \return void
  *
  */
-void employees_showListBySector(eEmployee [], int, eSector[], int);
-
+void employees_printEmployees(eEmployee [], int, eSector[], int);
 
 /** \brief calcula el valor total de la suma de todos los valores float de un campo float de un array de estructuras y lo muestra
  *
@@ -200,7 +185,6 @@ void employees_showListBySector(eEmployee [], int, eSector[], int);
  *
  */
 float employees_salaryAcum (eEmployee [], int);
-
 
 /** \brief calcula el valor promedio de un campo float de un array de estructuras y muestra las estructuras cuyos campos sobrepasan el valor
  *
