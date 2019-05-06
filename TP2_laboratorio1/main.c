@@ -57,10 +57,10 @@ int main()
                 }
                 break;
             case 5:
-                printf("El programa se cerrara...");
+                printf("El programa se cerrara...\n");
                 break;
             default:
-                printf("No ingreso una opcion valida");
+                printf("No ingreso una opcion valida\n");
                 break;
         }
         system("pause");
