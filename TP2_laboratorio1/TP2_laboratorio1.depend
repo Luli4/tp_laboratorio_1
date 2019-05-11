@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1557575409 source:c:\users\martin\desktop\tp2_laboratorio1\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"strings.h"
+	"input.h"
+	"validations.h"
+
+1557575409 c:\users\martin\desktop\tp2_laboratorio1\arrayemployees.h
+
+1557575410 c:\users\martin\desktop\tp2_laboratorio1\strings.h
+
+1557575410 c:\users\martin\desktop\tp2_laboratorio1\input.h
+
+1557575410 c:\users\martin\desktop\tp2_laboratorio1\validations.h
+
+1557575409 source:c:\users\martin\desktop\tp2_laboratorio1\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
+	"input.h"
+	"validations.h"
+
+1557575482 source:c:\users\martin\desktop\tp2_laboratorio1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+	"input.h"
+	"strings.h"
+	"validations.h"
+
+1557575410 source:c:\users\martin\desktop\tp2_laboratorio1\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1557575410 source:c:\users\martin\desktop\tp2_laboratorio1\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validations.h"
+	"input.h"
+

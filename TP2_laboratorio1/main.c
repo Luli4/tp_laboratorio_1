@@ -65,6 +65,6 @@ int main()
         }
         system("pause");
         system("cls");
-    }while(option!=6);
+    }while(option!=5);
     return 0;
 }
