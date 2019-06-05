@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1559777912 source:c:\users\lucia\onedrive\escritorio\tp3-aux\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"style.h"
+
+1559773638 c:\users\lucia\onedrive\escritorio\tp3-aux\employee.h
+	"LinkedList.h"
+
+1559764030 c:\users\lucia\onedrive\escritorio\tp3-aux\linkedlist.h
+
+1559764030 c:\users\lucia\onedrive\escritorio\tp3-aux\parser.h
+
+1559767068 c:\users\lucia\onedrive\escritorio\tp3-aux\style.h
+
+1559777640 source:c:\users\lucia\onedrive\escritorio\tp3-aux\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"Employee.h"
+	"input.h"
+	"strings.h"
+
+1559771488 c:\users\lucia\onedrive\escritorio\tp3-aux\input.h
+
+1559764030 c:\users\lucia\onedrive\escritorio\tp3-aux\strings.h
+
+1559773179 source:c:\users\lucia\onedrive\escritorio\tp3-aux\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
+	"input.h"
+	"validations.h"
+
+1559764030 c:\users\lucia\onedrive\escritorio\tp3-aux\validations.h
+
+1559776209 source:c:\users\lucia\onedrive\escritorio\tp3-aux\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"style.h"
+
+1559765883 c:\users\lucia\onedrive\escritorio\tp3-aux\controller.h
+
+1559773151 source:c:\users\lucia\onedrive\escritorio\tp3-aux\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+
+1559764030 source:c:\users\lucia\onedrive\escritorio\tp3-aux\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1559773055 source:c:\users\lucia\onedrive\escritorio\tp3-aux\style.c
+	<stdio.h>
+	<stdlib.h>
+	"input.h"
+	"windows.h"
+
+1559773015 source:c:\users\lucia\onedrive\escritorio\tp3-aux\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
