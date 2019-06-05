@@ -3,9 +3,7 @@
 #include "LinkedList.h"
 #include "Controller.h"
 #include "style.h"
-/****************************************************
-     TEST .EXE
-*****************************************************/
+
 int main()
 {
     system("color FD");
