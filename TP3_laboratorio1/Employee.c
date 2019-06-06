@@ -24,7 +24,7 @@ int employee_modName(Employee* this)
 {
     int state = -1;
     Employee auxThis;
-    getString("su nombre", auxThis.name);
+    getValidString("su nombre", auxThis.name, 60);
     firstToUpper(auxThis.name);
     if ((employee_verifyConformity("El nombre", "guardado"))==1)
     {
@@ -221,7 +221,7 @@ int employee_getAddParameters(Employee* this, int* id)
     int state = -1;
 
     auxId = *id;
-    getString("su nombre", auxName);
+    getValidString("su nombre", auxName, 60);
     firstToUpper(auxName);
     getValidInt(&auxHours, "las horas trabajadas", 1, 800);
     getValidInt(&auxSalary, "el salario", 5000, 200000);
