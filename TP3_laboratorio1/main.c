@@ -7,7 +7,7 @@
 int main()
 {
     system("color FD");
-    int id = 1001;
+    int id = 0;
     int option = 0;
     int loadedFlag = 0;
     LinkedList* pArrayListEmployee = ll_newLinkedList();
@@ -45,6 +45,7 @@ int main()
                 break;
             case 3:
                 system("cls");
+                employee_getLastId(pArrayListEmployee, &id);
                 if ((controller_addEmployee(pArrayListEmployee, &id))==1)
                 {
                     id++;

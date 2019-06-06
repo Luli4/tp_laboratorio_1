@@ -5,6 +5,21 @@
 #include "input.h"
 #include "strings.h"
 
+void employee_getLastId(LinkedList* pArrayListEmployee,  int* id)
+{
+    int i;
+    Employee* auxEmployee = NULL;
+    *id = 1;
+    for (i=0; i<ll_len(pArrayListEmployee); i++)
+    {
+        auxEmployee = ll_get(pArrayListEmployee, i);
+        if (*id == auxEmployee->id)
+        {
+            *id = *id+1;
+        }
+    }
+    return;
+}
 int employee_modName(Employee* this)
 {
     int state = -1;
