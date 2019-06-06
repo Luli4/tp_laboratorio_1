@@ -6,13 +6,13 @@
 void employees_optionsMenu(int* option, char* message, int lowMenu, int hiMenu)
 {
     system("cls");
-    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
     printf("Elija la opcion correspondiente:\n");
-    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
     printf("%s", message);
-    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
     getValidInt(option, "su opcion", lowMenu, hiMenu);
-    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
 }
 
 void welcome (char* message, int mSize)

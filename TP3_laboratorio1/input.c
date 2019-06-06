@@ -31,7 +31,7 @@ void getChar(char* message, char* letter)
 void getString(char* message, char* myString)
 {
     char buffer[200]; //guarda un string
-    printf("Ingrese %s: ", message);
+    printf("\nIngrese %s: ", message);
     fflush(stdin);
     scanf("%[^\n]", buffer);
     strcpy(myString, buffer);

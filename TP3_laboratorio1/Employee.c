@@ -9,7 +9,7 @@ void employee_getLastId(LinkedList* pArrayListEmployee,  int* id)
 {
     int i;
     Employee* auxEmployee = NULL;
-    *id = 1;
+    *id = 0;
     for (i=0; i<ll_len(pArrayListEmployee); i++)
     {
         auxEmployee = ll_get(pArrayListEmployee, i);

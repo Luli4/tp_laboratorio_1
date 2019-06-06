@@ -58,11 +58,13 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
 {
     int state = -1;
     Employee* this = employee_new();
-    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-\n");
+    printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
     if ((employee_getAddParameters(this, id))==1)
     {
+        printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
         printf("\n%5s  %14s %9s %10s\n\n", "ID", "NOMBRE", "HORAS", "SALARIO");
         employee_printOne(this);
+        printf("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
     }
     else
     {

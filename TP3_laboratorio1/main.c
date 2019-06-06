@@ -3,6 +3,7 @@
 #include "LinkedList.h"
 #include "Controller.h"
 #include "style.h"
+#include "Employee.h"
 
 int main()
 {
@@ -20,10 +21,17 @@ int main()
         switch(option)
         {
             case 1:
-                if ((controller_loadFromText("dataT.csv", pArrayListEmployee))==1 && loadedFlag == 0)
+                if (loadedFlag == 0)
                 {
-                    printf("\nLos empleados se cargaron con exito\n\n");
-                    loadedFlag = 1;
+                    if ((controller_loadFromText("dataT.csv", pArrayListEmployee))==1)
+                    {
+                        printf("\nLos empleados se cargaron con exito\n\n");
+                        loadedFlag = 1;
+                    }
+                    else
+                    {
+                        printf("\n\aError, los empleados ya fueron cargados al sistema\n\n");
+                    }
                 }
                 else
                 {
@@ -32,10 +40,13 @@ int main()
                 system("pause");
                 break;
             case 2:
-                if ((controller_loadFromBinary("dataB.csv", pArrayListEmployee))==1 && loadedFlag == 0)
+                if (loadedFlag == 0)
                 {
-                    printf("\nLos empleados fueron cargados con exito\n\n");
-                    loadedFlag = 2;
+                     if ((controller_loadFromBinary("dataB.csv", pArrayListEmployee))==1 && loadedFlag == 0)
+                    {
+                        printf("\nLos empleados fueron cargados con exito\n\n");
+                        loadedFlag = 2;
+                    }
                 }
                 else
                 {
@@ -44,11 +55,18 @@ int main()
                 system("pause");
                 break;
             case 3:
-                system("cls");
-                employee_getLastId(pArrayListEmployee, &id);
-                if ((controller_addEmployee(pArrayListEmployee, &id))==1)
+                if (ll_len(pArrayListEmployee) != 0)
                 {
-                    id++;
+                    system("cls");
+                    employee_getLastId(pArrayListEmployee, &id);
+                    if ((controller_addEmployee(pArrayListEmployee, &id))==1)
+                    {
+                        id++;
+                    }
+                }
+                else
+                {
+                    printf("\n\aPor favor, cargue primero el archivo para evitar inconsistencias.\n\n");
                 }
                 system("pause");
                 break;
