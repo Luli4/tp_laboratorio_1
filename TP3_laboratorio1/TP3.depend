@@ -70,23 +70,23 @@
 	<stdlib.h>
 	<string.h>
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\controller.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"Employee.h"
 	"parser.h"
 	"style.h"
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\employee.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\employee.h
 	"LinkedList.h"
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\linkedlist.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\linkedlist.h
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\parser.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\parser.h
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\style.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\style.h
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\employee.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\employee.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
@@ -94,11 +94,11 @@
 	"input.h"
 	"strings.h"
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\input.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\input.h
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\strings.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\strings.h
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\input.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\input.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -107,32 +107,32 @@
 	"input.h"
 	"validations.h"
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\validations.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\validations.h
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\parser.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"Employee.h"
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\strings.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\strings.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"strings.h"
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\style.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\style.c
 	<stdio.h>
 	<stdlib.h>
 	"input.h"
 	"windows.h"
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\validations.c
+1560204661 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\validations.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1559861536 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\main.c
+1560205227 source:c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -140,5 +140,5 @@
 	"style.h"
 	"Employee.h"
 
-1559861536 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\controller.h
+1560204661 c:\users\lucia\onedrive\escritorio\tp_laboratorio_1\tp3_laboratorio1\controller.h
 

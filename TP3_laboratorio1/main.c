@@ -78,7 +78,7 @@ int main()
                 }
                 else
                     {
-                        printf("\n\aNo hay datos cargados!\n\n");
+                        printf("\n\aPor favor, primero cargue el archivo!\n\n");
                     }
                 system("pause");
                 break;
@@ -90,7 +90,7 @@ int main()
                 }
                 else
                 {
-                    printf("\n\aNo hay datos cargados!\n\n");
+                    printf("\n\aPor favor, primero cargue el archivo!\n\n");
                 }
                 system("pause");
                 break;
@@ -111,7 +111,7 @@ int main()
                 }
                 else
                 {
-                    printf("\n\aNo hay datos cargados!\n\n");
+                    printf("\n\aPor favor, primero cargue el archivo!\n\n");
                 }
                 system("pause");
                 break;
@@ -122,21 +122,35 @@ int main()
                 }
                 else
                 {
-                    printf("\n\aNo hay empleados cargados!\n\n");
+                    printf("\n\aPor favor, primero cargue el archivo!\n\n");
                     system("pause");
                 }
                 break;
             case 8:
-                if (controller_saveAsText("dataT.csv" , pArrayListEmployee)==1)
+                if (loadedFlag != 0)
                 {
-                    printf("\nArchivos guardados\n\n");
+                    if (controller_saveAsText("dataT.csv" , pArrayListEmployee)==1)
+                    {
+                        printf("\nArchivos guardados\n\n");
+                    }
+                }
+                else
+                {
+                    printf("\n\aPor favor, primero cargue el archivo!\n\n");
                 }
                 system("pause");
                 break;
             case 9:
-                if (controller_saveAsBinary("dataB.csv" , pArrayListEmployee)==1)
+                if (loadedFlag != 0)
                 {
-                    printf("\nArchivos guardados\n\n");
+                     if (controller_saveAsBinary("dataB.csv" , pArrayListEmployee)==1)
+                    {
+                        printf("\nArchivos guardados\n\n");
+                    }
+                }
+                else
+                {
+                    printf("\n\aPor favor, primero cargue el archivo!\n\n");
                 }
                 system("pause");
                 break;
