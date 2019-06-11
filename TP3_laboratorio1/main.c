@@ -4,7 +4,8 @@
 #include "Controller.h"
 #include "style.h"
 #include "Employee.h"
-
+//probar system pause
+//mostrar lista en baja y modificacion y mostrar el elegido
 int main()
 {
     system("color FD");

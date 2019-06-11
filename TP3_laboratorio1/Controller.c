@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Controller.h"
 #include "Employee.h"
 #include "parser.h"
 #include "style.h"
@@ -94,6 +95,7 @@ int controller_editEmployee(LinkedList* pArrayListEmployee, int* id)
 {
     int option;
     int state = -1;
+    controller_ListEmployee(pArrayListEmployee);
     int index = employee_findById(pArrayListEmployee, "el id del empleado que desea buscar", id);
 
     if (index!=-1)
@@ -144,6 +146,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee, int* id)
 {
     int state = -1;
     Employee* this = NULL;
+    controller_ListEmployee(pArrayListEmployee);
     int index = employee_findById (pArrayListEmployee, "el numero de ID de quien desea eliminar", id);
 
     if (index != -1)

@@ -108,6 +108,7 @@ int employee_verifyConformity (char* message, char* cancelMessage)
     else
     {
         printf("\n\a%s no sera %s.\n\n", message, cancelMessage);
+        system("pause");
     }
 return state;
 }
