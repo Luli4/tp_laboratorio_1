@@ -1,0 +1,15 @@
+int getInt(char* message);
+void getFloat(char* message, float* number);
+void getChar(char* message, char* letter);
+void getChar(char* message, char* letter);
+void getString(char* message, char* myString);
+void getRandomNumber(int from, int to, int initialize, int* randomNumber);
+int getStringJustLetters(char* message, char* input);
+void getSex(char* input);
+int getStringNumbers(char* message, char* input);
+int getStringNumbers(char* message, char* input);
+int getStringFloatNumber(char* message, char* input);
+void getValidFloat(float* finalFloat, char* message, float lowLimit, float hiLimit);
+void getValidString (char* message, char* input, int ssize);
+void getValidInt(int* finalInt, char* message, int lowLimit, int hiLimit);
+void getValidSex(char* letter);
