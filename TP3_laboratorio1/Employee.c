@@ -5,12 +5,12 @@
 #include "input.h"
 #include "strings.h"
 
-int employee_saveIdFile(int* lastId)
+int employee_saveIdFile(int* lastId, char* path)
 {
 
     int state = -1;
     FILE* pFile = NULL;
-    pFile = fopen("id.csv", "wb");
+    pFile = fopen(path, "wb");
     if (pFile != NULL)
     {
         fwrite (lastId, sizeof(int), 1, pFile);
@@ -20,11 +20,11 @@ int employee_saveIdFile(int* lastId)
     return state;
 }
 
-int employee_getIdFile (int* lastId)
+int employee_getIdFile (int* lastId, char* path)
 {
     int state = -1;
     FILE* pFile = NULL;
-    pFile = fopen ("id.csv", "rb");
+    pFile = fopen (path, "rb");
     if (pFile!=NULL)
     {
         state = fread(lastId, sizeof(int), 1, pFile);

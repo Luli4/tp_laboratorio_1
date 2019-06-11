@@ -25,7 +25,7 @@ int main()
                 {
                     if ((controller_loadFromText("dataT.csv", pArrayListEmployee))==1)
                     {
-                        employee_getIdFile (&id);
+                        employee_getIdFile (&id, "id.csv");
                         printf("\nLos empleados se cargaron con exito\n\n");
                         loadedFlag = 1;
                     }
@@ -45,7 +45,7 @@ int main()
                 {
                      if ((controller_loadFromBinary("dataB.csv", pArrayListEmployee))==1 && loadedFlag == 0)
                     {
-                        employee_getIdFile (&id);
+                        employee_getIdFile (&id, "id.csv");
                         printf("\nLos empleados fueron cargados con exito\n\n");
                         loadedFlag = 2;
                     }
@@ -132,7 +132,7 @@ int main()
                 {
                     if (controller_saveAsText("dataT.csv" , pArrayListEmployee)==1)
                     {
-                        employee_saveIdFile(&id);
+                        employee_saveIdFile(&id, "id.csv");
                         printf("\nArchivos guardados\n\n");
                     }
                 }
@@ -147,7 +147,7 @@ int main()
                 {
                      if (controller_saveAsBinary("dataB.csv" , pArrayListEmployee)==1)
                     {
-                        employee_saveIdFile(&id);
+                        employee_saveIdFile(&id, "id.csv");
                         printf("\nArchivos guardados\n\n");
                     }
                 }

@@ -9,8 +9,8 @@ typedef struct
     int salary;
 }Employee;
 
-int employee_getIdFile (int* lastId);
-int employee_saveIdFile(int* lastId);
+int employee_getIdFile (int* lastId, char* path);
+int employee_saveIdFile(int* lastId, char* path);
 
 int employee_modName(Employee* this);
 int employee_modHours(Employee* this);
