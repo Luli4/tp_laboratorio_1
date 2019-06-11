@@ -8,10 +8,10 @@
 int main()
 {
     system("color FD");
-    int id = 0;
     int option = 0;
     int loadedFlag = 0;
     LinkedList* pArrayListEmployee = ll_newLinkedList();
+    int id = 1001;
     welcome ("Bienvenido! :)   ", sizeof("Bienvenido! :)   "));
     do{
         employees_optionsMenu(&option, "\n1.Cargar empleados desde el archivo *Texto*\n2.Cargar empleados desde el archivo *Binario*\n\n"
@@ -25,6 +25,7 @@ int main()
                 {
                     if ((controller_loadFromText("dataT.csv", pArrayListEmployee))==1)
                     {
+                        employee_getIdFile (&id);
                         printf("\nLos empleados se cargaron con exito\n\n");
                         loadedFlag = 1;
                     }
@@ -44,6 +45,7 @@ int main()
                 {
                      if ((controller_loadFromBinary("dataB.csv", pArrayListEmployee))==1 && loadedFlag == 0)
                     {
+                        employee_getIdFile (&id);
                         printf("\nLos empleados fueron cargados con exito\n\n");
                         loadedFlag = 2;
                     }
@@ -58,7 +60,6 @@ int main()
                 if (ll_len(pArrayListEmployee) != 0)
                 {
                     system("cls");
-                    employee_getLastId(pArrayListEmployee, &id);
                     if ((controller_addEmployee(pArrayListEmployee, &id))==1)
                     {
                         id++;
@@ -131,6 +132,7 @@ int main()
                 {
                     if (controller_saveAsText("dataT.csv" , pArrayListEmployee)==1)
                     {
+                        employee_saveIdFile(&id);
                         printf("\nArchivos guardados\n\n");
                     }
                 }
@@ -145,6 +147,7 @@ int main()
                 {
                      if (controller_saveAsBinary("dataB.csv" , pArrayListEmployee)==1)
                     {
+                        employee_saveIdFile(&id);
                         printf("\nArchivos guardados\n\n");
                     }
                 }

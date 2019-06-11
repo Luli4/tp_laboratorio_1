@@ -5,6 +5,36 @@
 #include "input.h"
 #include "strings.h"
 
+int employee_saveIdFile(int* lastId)
+{
+
+    int state = -1;
+    FILE* pFile = NULL;
+    pFile = fopen("id.csv", "wb");
+    if (pFile != NULL)
+    {
+        fwrite (lastId, sizeof(int), 1, pFile);
+        state = 1;
+    }
+    fclose(pFile);
+    return state;
+}
+
+int employee_getIdFile (int* lastId)
+{
+    int state = -1;
+    FILE* pFile = NULL;
+    pFile = fopen ("id.csv", "rb");
+    if (pFile!=NULL)
+    {
+        state = fread(lastId, sizeof(int), 1, pFile);
+
+    }
+    fclose(pFile);
+    return state;
+}
+
+/*
 void employee_getLastId(LinkedList* pArrayListEmployee,  int* id)
 {
     int i;
@@ -19,7 +49,7 @@ void employee_getLastId(LinkedList* pArrayListEmployee,  int* id)
         }
     }
     return;
-}
+}*/
 int employee_modName(Employee* this)
 {
     int state = -1;

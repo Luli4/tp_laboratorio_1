@@ -9,12 +9,14 @@ typedef struct
     int salary;
 }Employee;
 
+int employee_getIdFile (int* lastId);
+int employee_saveIdFile(int* lastId);
 
 int employee_modName(Employee* this);
 int employee_modHours(Employee* this);
 int employee_modSalary(Employee* this);
 
-void employee_getLastId(LinkedList* pArrayListEmployee,  int* id);
+//void employee_getLastId(LinkedList* pArrayListEmployee,  int* id);
 int employee_getAddParameters(Employee* this, int* id);
 void employee_printOne(Employee* this);
 int employee_findById (LinkedList* pArrayListEmployee, char* msg, int* id);
